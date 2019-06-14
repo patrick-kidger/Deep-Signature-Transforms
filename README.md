@@ -27,7 +27,7 @@ Python 3.7 was used. Virtual environments and packages were managed with [Minico
 
 [`pytorch-ignite==0.1.2`](https://pytorch.org/ignite/) is an extension to PyTorch.
 
-[`iisignature==0.23`](https://github.com/bottler/iisignature) for calculating signatures. It is CPU-only; consequently signature-based models are currently bottlenecked here.
+[`iisignature==0.23`](https://github.com/bottler/iisignature) for calculating signatures. (Which was used as [Signatory](https://github.com/patrick-kidger/signatory) had not been developed yet.)
 
 [`jupyter==1.0.0`](https://jupyter.org/)
 
