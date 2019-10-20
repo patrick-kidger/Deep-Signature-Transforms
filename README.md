@@ -1,7 +1,7 @@
-# Deep Signatures
+# Deep Signature Transforms
 Using signatures as layers in a neural network.
 
-This is the code for the paper [Deep Signatures](https://arxiv.org/abs/1905.08494) by Bonnier, Kidger, Perez Arribas, Salvi, Lyons 2019.
+This is the code for the paper [Deep Signature Transforms](https://arxiv.org/abs/1905.08494) by Bonnier, Kidger, Perez Arribas, Salvi, Lyons 2019.
 
 To use signatures in your own projects, look at [Signatory](https://github.com/patrick-kidger/signatory), which was a spin-off from this project.
 
