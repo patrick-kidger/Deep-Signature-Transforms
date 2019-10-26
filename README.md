@@ -1,5 +1,5 @@
 # Deep Signature Transforms
-Using signatures as layers in a neural network.
+Using the signature transform as a pooling layer in a neural network.
 
 This is the code for the paper [Deep Signature Transforms](https://arxiv.org/abs/1905.08494) by Bonnier, Kidger, Perez Arribas, Salvi, Lyons 2019.
 
@@ -14,9 +14,9 @@ If you're coming at this already knowing something about signatures, then you pr
 The signature of a stream of data is essentially a collection of statistics about that stream of data. This collection of statistics does such a good job of capturing the information about the stream of data that it actually determines the stream of data uniquely. (Up to something called 'tree-like equivalance' anyway, which is really just a technicality. It's an equivalence relation that matters about as much as two functions being equal almost everywhere. That is to say, not much at all.) The signature transform is a particularly attractive tool in machine learning because it is what we call a 'universal nonlinearity': it is sufficiently rich that it captures every possible nonlinear function of the original stream of data. Any function of a stream is *linear* on its signature. Now for various reasons this is a mathematical idealisation not borne out in practice (which is why we put them in a neural network and don't just use a simple linear model), but they still work very well!
 
 ## Directory layout and reproducability
-The `packages` directory contains the `candle` and `siglayer` packages, which were created for this project, but have standalone value. The `candle` package just provides various helpers for using PyTorch. The `siglayer` package provides the functionality necessary to perform signature calculations in PyTorch (and internally uses the `iisignature` package). It also provides some example models using the signature.
-
 The `src` directory contains the scripts for our experiments. Reproducability should be easy: just run the `.ipynb` files.
+
+(The `packages` directory just contains some separate packages that were put together to support this project.)
 
 ## Dependencies
 Python 3.7 was used. Virtual environments and packages were managed with [Miniconda](https://docs.conda.io/en/latest/miniconda.html). The following external packages were used, and may be installed via `pip3 install -r requirements.txt`.

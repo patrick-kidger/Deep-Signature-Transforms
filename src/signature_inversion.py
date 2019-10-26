@@ -1,25 +1,9 @@
 import iisignature
 import numpy as np
-import scipy.interpolate as interpolate
 import siglayer
 import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
-
-
-def plot(points, **kwargs):
-    """Interpolates and plots a set of points."""
-    # Linear length along the line:
-    distance = np.cumsum(np.sqrt(np.sum(np.diff(points, axis=0) ** 2, axis=1)))
-    distance = np.insert(distance, 0, 0) / distance[-1]
-
-    # Interpolation for different methods:
-    alpha = np.linspace(0, 1, 75)
-
-    interpolator =  interpolate.interp1d(distance, points, kind="quadratic", axis=0)
-    interpolated_points = interpolator(alpha)
-
-    plt.plot(*interpolated_points.T, **kwargs)
 
 
 def _get_tree_reduced_steps(X, order=4, steps=4, tol=0.1):
