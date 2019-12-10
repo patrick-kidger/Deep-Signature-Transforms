@@ -3,7 +3,7 @@ Using the signature transform as a pooling layer in a neural network.
 
 This is the code for the paper [Deep Signature Transforms](https://arxiv.org/abs/1905.08494) by Bonnier, Kidger, Perez Arribas, Salvi, Lyons 2019.
 
-To use signatures in your own projects, look at [Signatory](https://github.com/patrick-kidger/signatory), which was a spin-off from this project.
+Look at [Signatory](https://github.com/patrick-kidger/signatory) for a PyTorch implementation of the signature transform.
 
 ## Overview
 If you're coming at this already knowing something about neural networks, then the idea is that the 'signature transform' is a transformation that does a particularly good job extracting features from streams of data, so it's a natural thing to try and build into our neural network models.
