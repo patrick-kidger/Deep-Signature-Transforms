@@ -6,7 +6,7 @@ jupyter==1.0.0
 matplotlib==2.2.4
 pandas==0.24.2
 torch==1.0.1
-scikit-learn==0.20.3
+scikit-learn==1.5.0
 sdepy==1.0.1
 tqdm==4.31.1
 
